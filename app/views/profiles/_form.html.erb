@@ -1,0 +1,30 @@
+<%= form_with model: @profile, local:true do |f| %>
+<div class="form-grope">
+  <%= f.label :name,"ニックネーム"%>
+  <%= f.text_field :name %>
+</div>
+
+<div class="form-grope">
+  <%= f.label :learning_history,"学習歴(年)"%>
+  <%= f.number_field :learning_history%>
+</div>
+<div class="form-grope">
+  <%= f.label :purpose,"目的"%>
+  <%= f.text_field :purpose%>
+</div>
+<div class="form-grope">
+  <%= f.label :image,"プロフィール画像"%>
+  <%= f.file_field :image%><br>
+</div>
+
+<%# f.object = post %>
+<% if f.object.image.attached? %>
+  <div class="image-pv">
+    <span>アップロードされてる画像</span>
+    <%= image_tag f.object.image %>
+  </div>
+<% end %>
+<div class="submit-block">
+  <%= f.submit class:"button"%>
+</div>
+<% end %>

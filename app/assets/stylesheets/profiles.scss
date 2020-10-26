@@ -1,0 +1,62 @@
+// Place all the styles related to the profiles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+#profile-create,
+#profile-update,
+#profiles-edit,
+#profiles-new {
+  form {
+    .form-grope {
+      margin: 10px 0;
+
+      .label {
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      [type=number],
+      input[type=text] {
+        width: 100%;
+        margin: 15px 0;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+      }
+    }
+    .image-pv{
+      width: 500px;
+      height: auto;
+    }
+    .submit-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+
+      .button {
+        display: inline-block;
+        border-radius: 5%;
+        font-size: 18pt;
+        text-align: center;
+        cursor: pointer;
+        padding: 12px;
+        background: #0b5d62;
+        color: #ffffff;
+        line-height: 1em;
+        transition: 0.3s;
+        box-shadow: 6px 6px 3px #666666;
+        border: 2px solid #0b5d62;
+      }
+
+      .button:hover {
+        box-shadow: none;
+        color: #0b5d62;
+        background: #ffffff;
+      }
+    }
+  }
+}

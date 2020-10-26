@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: MyString
+  : one
+  name: MyString
+  learning-history: 1
+  purpose: MyString
+
+two:
+  user: MyString
+  : two
+  name: MyString
+  learning-history: 1
+  purpose: MyString
